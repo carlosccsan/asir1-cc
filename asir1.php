@@ -2,7 +2,7 @@
 <?php
 echo '<a href="http://192.168.0.84/asir1-RMH/asir1.php">Página de Rolando</a>';
 echo "<br>";
-echo "Aarón Martín López";
+echo "Carlos Campo";
 echo "<br>";
 echo '<a href="http://192.168.0.191">Página de Alex</a>';
   $archivo="visitas.txt";

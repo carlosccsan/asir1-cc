@@ -1,3 +1,5 @@
+<a href="https://github.com/carlosccsan/asir1-cc">GitHub</a>
+
 <?php
  
 if(isset($_POST['submit']))
@@ -8,7 +10,6 @@ $name = $_POST['name'];
  
 echo "Registo completado : <b> $name </b><br><br>";
  
-
   $archivo="suscriptores.txt";
   $proceso=fopen($archivo,"a") or die("basura");
   $datos="Registro suscriptor:".$name."\r\n";
@@ -19,7 +20,7 @@ echo "Registo completado : <b> $name </b><br><br>";
  
 ?>
 
-<h1>Suscribete</h1>
+<h1>Formulario Suscriptores</h1>
 <br>
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
  <br> Email: 
