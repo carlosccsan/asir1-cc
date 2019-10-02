@@ -1,14 +1,24 @@
-<?php
-function calcula($a,$b){
-$r=null;
- $r=$r."suma:" .$a."+".$b."=".($a+$b). '</br>';
- $r=$r."resta:" .$a."-".$b."=".($a-$b). '</br>';
-if($b!=0) $r=$r."division:" .$b."/".$a."=".($b/$a). '</br>';
- $r=$r."multiplicacion:" .$a."x".$b."=".($a*$b). '</br>';
-return $r;
-}
-$r=calcula(10,5);
-echo $r;
-$r=calcula(420,69);
-echo $r;
-?>
+ <table border="1" align="center">
+            <?php
+            echo "<tr>";
+            for ($cabecera="0";$cabecera<=10;$cabecera++){
+                        echo "<th>";
+                        echo $cabecera;
+                        echo "</th>";
+            }
+            echo "</tr>";
+            for ($x = 1; $x <=10; $x++){
+                       echo "<tr>";
+                       echo "<th>";
+                       echo $x;
+                       echo "</th>";
+                            for ($y=1;$y<=10;$y++){                      
+                                    $multiplicacion=$x*$y;                    
+                                    echo "<td>";                      
+                                    echo $multiplicacion;                      
+                                    echo "</td>";              
+                            }              
+                    echo "</tr>";          
+                    }      
+    ?>      
+    </table>
